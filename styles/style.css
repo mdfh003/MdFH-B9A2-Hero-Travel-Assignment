@@ -1,8 +1,207 @@
-*{
+/* Shared Styles */
+body{
+    font-family: "Mulish", "sans-serif";
     font-size: 16px;
+    /* width: 1170px; */
+
 }
 
-h1{
+
+
+/* // <uniquifier>: Use a uniquifier for the class name
+// <weight>: Use a value from 200 to 1000 */
+
+/* .mulish{
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+:root{
+    --heading-color: #131318;
+    --orange-color: #FF5400;
+    --dark-01: #424247;
+    --white-color: #FFF; 
+
+
+}
+/* navbar */
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.hero-travel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.25em;
+    font-weight: 800;
+    gap: 16.63px;
+}
+
+#travel{
+    color: var(--orange-color);
+}
+
+#logo{
+    width: 48px;
+    height: 56.1px;
+    flex-shrink: 0;
+}
+
+.menu > ul{
+    display: inline-flex;
+    list-style: none;
+    pad: 10px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 44px;
+
+} 
+.menu a{
+    text-decoration: none;
+    color: var(--dark-01);
+}
+#home{
+    color: var(--orange-color);
+}
+/* banner section */
+.background1{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%);
+}
+.banner{
+    background-image: url(../Images/banner.png);
+    width: 1170px;
+    height: 500px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    /* border-top-right-radius: 16px ;
+    border-top-left-radius: 16px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    /* background-color: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%) ;     */
+}
+
+.explore, .banner-descrip, .wwsf{
     text-align: center;
-    font-size: 2.5em;
+}
+.explore{
+    color: var(--white-color);
+    font-size: 4em;
+    font-weight: 800;
+    /* margin: 106px 287px 12px 287px; */
+    /* width: 596px;
+    height: 80px; */
+}
+
+.banner-descrip{
+    color: var(--white-color);
+    text-align: center;
+    font-weight: 400;
+    line-height: 26px;
+    padding: 12px 247px 24px 247px;
+}
+.banner .wwsf ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: flex-start; */
+    gap: 24px;
+}
+.banner .wwsf ul li{
+    width: 174px;
+    height: 52px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.banner .wwsf {
+    /* list-style: none; */
+    /* display: inline-flex; */
+    width: 786px; 
+    height: 52px;
+    padding: 16px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);;
+}
+
+/* Our Tour Section */
+.our-tours{
+    
+    width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    margin: 0 auto;
+}
+
+/* Choose Your Destination */
+.choose-destination{
+    /* display: grid; */
+    margin-top: 100px;
+    margin: 100px auto 0 auto;
+    width: 1170px;
+    align-items: centers;
+    text-align: center;
+    gap: 20px;
+}
+
+.choose-destination > .images, .row1, .row2, .row3{
+    display: grid;
+    gap: 20px;
+    position: relative;
+    text-align: center;
+    color: var(--white-color);
+    font-size: 2em;
+}
+
+.images > .row1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.maldives{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+.indonesia{
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+.images > .row2{
+    grid-template-columns: repeat(3, 1fr);
+}
+.srilanka{
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+}
+.nort_amr{
+    position: absolute;
+    top: 35%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+}
+.kashmir{
+    position: absolute;
+    top: 35%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+}
+.images > .row3{
+    grid-template-columns: repeat(2, 1fr);
 }
